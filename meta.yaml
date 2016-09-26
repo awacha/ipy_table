@@ -1,0 +1,25 @@
+package:
+  name: ipy_table
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  git_url: ./
+
+build:
+  number: {{ GIT_DESCRIBE_NUMBER }}
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+about:
+  home: https://github.com/awacha/ipy_table
+  license: 3-clause BSD license
+  dev_url: https://github.com/awacha/ipy_table.git
+  license_family: BSD
+  license_file: COPYING.txt
+  summary: Creates richly formatted tables in an IPython Notebook
